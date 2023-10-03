@@ -203,7 +203,7 @@
       "entityAliases" : {
         "af82de4a-461c-acd7-58d3-93a8cba8da8b" : {
           "id" : "af82de4a-461c-acd7-58d3-93a8cba8da8b",
-          "alias" : "esp8266",
+          "alias" : "esp",
           "filter" : {
             "type" : "singleEntity",
             "resolveMultiple" : false,
