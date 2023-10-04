@@ -19,8 +19,8 @@
     "description" : null,
     "descriptor" : {
       "type" : "timeseries",
-      "sizeX" : 6,
-      "sizeY" : 5.5,
+      "sizeX" : 10,
+      "sizeY" : 7,
       "resources" : [ ],
       "templateHtml" : "\r\n    <input type=\"button\" value=\"Click Me\" />\r\n<div style=\"position: relative;\">\r\n    <canvas id=\"canvas1\" width=\"640\" height=\"366\" style=\"position: absolute; left: 0; top: 0; z-index: 0;\"></canvas>\r\n    <canvas id=\"canvas2\" width=\"640\" height=\"366\" style=\"position: absolute; left: 0; top: 0; z-index: 1;\"></canvas>\r\n</div>\r\n\r\n",
       "templateCss" : "",
