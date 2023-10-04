@@ -1,0 +1,239 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "56bc3307-bde0-080c-e46e-712b03c64dc1" : {
+          "isSystemType" : false,
+          "bundleAlias" : "heatmap",
+          "typeAlias" : "heatmap_widget",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 6,
+          "sizeY" : 5.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "501b9a16-e3e6-e4d3-2447-004f49a7d2dd",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "posX",
+                "type" : "timeseries",
+                "label" : "posX",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3016414447969977
+              }, {
+                "name" : "posY",
+                "type" : "timeseries",
+                "label" : "posY",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.0954248344216384
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1695083330282,
+                  "endTimeMs" : 1695169730282
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "New HEATMAP WIDGET",
+            "useDashboardTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "56bc3307-bde0-080c-e46e-712b03c64dc1"
+        },
+        "e47d3f57-c078-8e55-cfa8-4232ceb795d5" : {
+          "isSystemType" : false,
+          "bundleAlias" : "boton_prueba",
+          "typeAlias" : "prueba_led",
+          "type" : "rpc",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 6,
+          "config" : {
+            "targetDeviceAliases" : [ ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "parseGpioStatusFunction" : "return body[pin] === true;",
+              "gpioStatusChangeRequest" : {
+                "method" : "setGpioStatus",
+                "paramsBody" : "{\n   \"pin\": \"{$pin}\",\n   \"enabled\": \"{$enabled}\"\n}"
+              },
+              "requestTimeout" : 500,
+              "switchPanelBackgroundColor" : "#b71c1c",
+              "gpioStatusRequest" : {
+                "method" : "getGpioStatus",
+                "paramsBody" : "{}"
+              },
+              "gpioList" : [ {
+                "pin" : 1,
+                "label" : "GPIO 1",
+                "row" : 0,
+                "col" : 0,
+                "_uniqueKey" : 0
+              }, {
+                "pin" : 2,
+                "label" : "GPIO 2",
+                "row" : 0,
+                "col" : 1,
+                "_uniqueKey" : 1
+              }, {
+                "pin" : 3,
+                "label" : "GPIO 3",
+                "row" : 1,
+                "col" : 0,
+                "_uniqueKey" : 2
+              } ]
+            },
+            "title" : "New prueba-led",
+            "datasources" : [ ],
+            "targetDeviceAliasIds" : [ "501b9a16-e3e6-e4d3-2447-004f49a7d2dd" ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e47d3f57-c078-8e55-cfa8-4232ceb795d5"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "prueba",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "56bc3307-bde0-080c-e46e-712b03c64dc1" : {
+                  "sizeX" : 10,
+                  "sizeY" : 7,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "e47d3f57-c078-8e55-cfa8-4232ceb795d5" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 7,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "501b9a16-e3e6-e4d3-2447-004f49a7d2dd" : {
+          "id" : "501b9a16-e3e6-e4d3-2447-004f49a7d2dd",
+          "alias" : "Alias esp",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "f4a3f5d0-5745-11ee-ab62-bf6c2845e826"
+            }
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1695083324952,
+            "endTimeMs" : 1695169724952
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "a59aec60-4de4-11ee-ab62-bf6c2845e826"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "prueba",
+    "ownerId" : null,
+    "title" : "prueba"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
