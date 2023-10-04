@@ -27,7 +27,7 @@
               "valueKey" : "value",
               "getValueMethod" : "checkStatus",
               "parseValueFunction" : "return data ? true : false;",
-              "setValueMethod" : "carniceriaAvanza",
+              "setValueMethod" : "setLedStatus",
               "convertValueFunction" : "return value;",
               "requestTimeout" : 500,
               "requestPersistent" : false,
