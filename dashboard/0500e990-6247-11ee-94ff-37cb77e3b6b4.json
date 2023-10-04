@@ -47,7 +47,7 @@
             "actions" : { },
             "decimals" : 2,
             "datasources" : [ ],
-            "targetDeviceAliasIds" : [ "af82de4a-461c-acd7-58d3-93a8cba8da8b" ],
+            "targetDeviceAliasIds" : [ "28be1e8f-fc1f-6dcf-8a56-15db35389a7d" ],
             "enableDataExport" : true,
             "widgetCss" : "",
             "pageSize" : 1024,
@@ -210,6 +210,18 @@
             "singleEntity" : {
               "entityType" : "DEVICE",
               "id" : "9c126ec0-4de4-11ee-ab62-bf6c2845e826"
+            }
+          }
+        },
+        "28be1e8f-fc1f-6dcf-8a56-15db35389a7d" : {
+          "id" : "28be1e8f-fc1f-6dcf-8a56-15db35389a7d",
+          "alias" : "esp2",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "f4a3f5d0-5745-11ee-ab62-bf6c2845e826"
             }
           }
         }
