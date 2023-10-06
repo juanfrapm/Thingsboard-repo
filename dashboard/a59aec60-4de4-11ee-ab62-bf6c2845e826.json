@@ -134,6 +134,34 @@
           "row" : 0,
           "col" : 0,
           "id" : "e47d3f57-c078-8e55-cfa8-4232ceb795d5"
+        },
+        "035062f8-4a0b-1ab8-c544-3d3caf9cf21e" : {
+          "isSystemType" : false,
+          "bundleAlias" : "heatmap",
+          "typeAlias" : "widget_heatmap_control",
+          "type" : "rpc",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 10,
+          "sizeY" : 7,
+          "config" : {
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "oneWayElseTwoWay" : false,
+              "requestTimeout" : 500
+            },
+            "title" : "New WIDGET HEATMAP CONTROL",
+            "targetDeviceAliases" : [ ],
+            "datasources" : [ ],
+            "targetDeviceAliasIds" : [ "501b9a16-e3e6-e4d3-2447-004f49a7d2dd" ]
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "035062f8-4a0b-1ab8-c544-3d3caf9cf21e"
         }
       },
       "states" : {
@@ -153,6 +181,12 @@
                   "sizeX" : 7,
                   "sizeY" : 6,
                   "row" : 7,
+                  "col" : 0
+                },
+                "035062f8-4a0b-1ab8-c544-3d3caf9cf21e" : {
+                  "sizeX" : 10,
+                  "sizeY" : 7,
+                  "row" : 13,
                   "col" : 0
                 }
               },
