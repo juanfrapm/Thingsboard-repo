@@ -68,7 +68,10 @@
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "oneWayElseTwoWay" : false,
+              "requestTimeout" : 500
+            },
             "title" : "New HEATMAP WIDGET",
             "useDashboardTimewindow" : true
           },
